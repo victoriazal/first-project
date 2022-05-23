@@ -1,56 +1,61 @@
-
-
-*{
+* {
     text-align: center;
     margin-top: 10px;
     position: relative;
 }
-body{
+
+body {
     background-color: rgb(46, 42, 42);
     color: white;
 }
 
-.Top_menu li{
+.Top_menu li {
     display: inline-block;
     margin-right: 25px;
 }
-header{
-    
+
+header {
     justify-content: center;
 }
+
 .Top_menu a:hover{
     color: white;
 }
+
 .Top_menu a{
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     color: antiquewhite;
     text-decoration:none;
 }
+
 .button {
-	padding: 15px;
-	font-size: 16px;
-	font-weight: 700;
-	margin: 0px 0px 20px 0px;
-	cursor: pointer;
-	background-color: rgb(231, 231, 0);
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0px 0px 20px 0px;
+    cursor: pointer;
+    background-color: rgb(231, 231, 0);
 }
-.underline{
+
+.underline {
     border-bottom:2px solid salmon;
 }
-.logOut{
+
+.logOut {
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     color: antiquewhite;
     text-align: right;
     padding-right: 20px;
 }
-.buttonDelete{
+
+.buttonDelete {
     box-sizing: border-box;
-    padding:0 ;
+    padding: 0;
     margin: 0;
     border-style: none;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     display: flex;
     flex-direction: row;
@@ -58,12 +63,12 @@ header{
     padding: 8px 8px;
     margin: 5px 8px;
     position: relative;
-    background:#984063;
+    background: #984063;
     color: white;
     transition: transform 0.3s ease;
-    
 }
-.buttonDelete::after,.buttonDelete::before{
+
+.buttonDelete::after, .buttonDelete::before {
     content: "";
     position: absolute;
     opacity: 0.3;
@@ -76,27 +81,34 @@ header{
     z-index: -1;
     transition: transform 0.3s ease;
 }
-.buttonDelete:hover{
+
+.buttonDelete:hover {
     transform: translate(-12px,-12px);
 }
-.buttonDelete:hover::after{
+
+.buttonDelete:hover::after {
     transform: translate(6px,6px);
 }
-.buttonDelete:hover::before{
+
+.buttonDelete:hover::before {
     transform: translate(12px,12px);
 }
-thead{
+
+thead {
     box-shadow: 0 5px 10px rgb(206, 253, 255);
     text-transform: uppercase;
     background-color: #5ac2c5;
 }
-td{
+
+td {
     letter-spacing: 0.1rem;
 }
-table{
+
+table {
     border-collapse: collapse;
 }
-.peopleCount{
+
+.peopleCount {
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     color: antiquewhite;
