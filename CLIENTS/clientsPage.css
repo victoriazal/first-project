@@ -1,0 +1,104 @@
+
+
+*{
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+}
+body{
+    background-color: rgb(46, 42, 42);
+    color: white;
+}
+
+.Top_menu li{
+    display: inline-block;
+    margin-right: 25px;
+}
+header{
+    
+    justify-content: center;
+}
+.Top_menu a:hover{
+    color: white;
+}
+.Top_menu a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: antiquewhite;
+    text-decoration:none;
+}
+.button {
+	padding: 15px;
+	font-size: 16px;
+	font-weight: 700;
+	margin: 0px 0px 20px 0px;
+	cursor: pointer;
+	background-color: rgb(231, 231, 0);
+}
+.underline{
+    border-bottom:2px solid salmon;
+}
+.logOut{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: antiquewhite;
+    text-align: right;
+    padding-right: 20px;
+}
+.buttonDelete{
+    box-sizing: border-box;
+    padding:0 ;
+    margin: 0;
+    border-style: none;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    padding: 8px 8px;
+    margin: 5px 8px;
+    position: relative;
+    background:#984063;
+    color: white;
+    transition: transform 0.3s ease;
+    
+}
+.buttonDelete::after,.buttonDelete::before{
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    background: #984063;
+    border-radius: inherit;
+    width: 100%;
+    height:100%;
+    left:0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+.buttonDelete:hover{
+    transform: translate(-12px,-12px);
+}
+.buttonDelete:hover::after{
+    transform: translate(6px,6px);
+}
+.buttonDelete:hover::before{
+    transform: translate(12px,12px);
+}
+thead{
+    box-shadow: 0 5px 10px rgb(206, 253, 255);
+    text-transform: uppercase;
+    background-color: #5ac2c5;
+}
+td{
+    letter-spacing: 0.1rem;
+}
+table{
+    border-collapse: collapse;
+}
+.peopleCount{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: antiquewhite;
+    text-decoration: none;
+}
