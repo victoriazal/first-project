@@ -1,42 +1,46 @@
-*{
+* {
     text-align: center;
     margin-top: 10px;
     position: relative;
 }
-body{
+
+body {
     background-color: olivedrab;
     color: white;
 }
 
-.Top_menu li{
+.Top_menu li {
     display: inline-block;
     margin-right: 25px;
 }
-header{
-    
+
+header {
+
     justify-content: center;
 }
-.Top_menu a:hover{
+
+.Top_menu a:hover {
     color: white;
+    border-bottom: 2px solid salmon;
 }
-.Top_menu a{
+
+.Top_menu a {
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     color: antiquewhite;
-    text-decoration:none;
+    text-decoration: none;
 }
+
 .button {
-	padding: 15px;
-	font-size: 16px;
-	font-weight: 700;
-	margin: 0px 0px 20px 0px;
-	cursor: pointer;
-	background-color: rgb(231, 231, 0);
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0px 0px 20px 0px;
+    cursor: pointer;
+    background-color: rgb(231, 231, 0);
 }
-.underline{
-    border-bottom:2px solid salmon;
-}
-.logOut{
+
+.logOut {
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     color: antiquewhite;
