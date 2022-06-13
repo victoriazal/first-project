@@ -13,7 +13,7 @@ async function getResponce() {
 
     let menCount = 0;
     let womenCount = 0;
-    let moneyCount = '0';
+    let moneyCount = '$0';
 
 
     for (const key in content) {
@@ -26,8 +26,8 @@ async function getResponce() {
         };
 
 
-        if ((content[key].balance) > moneyCount) {
-            moneyCount === (content[key].balance)
+        if (content[key].balance > moneyCount) {
+            moneyCount = (content[key].balance)
         };
         console.log(content[key].balance)
 
@@ -39,7 +39,7 @@ async function getResponce() {
             <td>${content[key].email}</td>
             <td>${content[key].phone}</td>
             <td>${content[key].balance}</td>
-            <td>${content[key].registered}  </td>
+            <td>${content[key].registered}</td>
             <td><button type='submit' class='buttonDelete' onclick='delStudent(this)'>Delete</button></td>
             
         </tr>`
@@ -65,20 +65,20 @@ getResponce()
 
 
 //menu
-const list = document.querySelector('.Top_menu');
-let previousVal;
-list.addEventListener('mouseover', (event) => {
-    const el = event.target;
-    if (el.tagName !== 'A') {
-        return;
-    };
-    if (previousVal) {
-        previousVal.classList.remove('underline');
-    };
-    el.classList.add('underline');
-    previousVal = el;
+// const list = document.querySelector('.Top_menu');
+// let previousValue;
+// list.addEventListener('mouseover', (event) => {
+//     const el = event.target;
+//     if (el.tagName !== 'A') {
+//         return;
+//     };
+//     if (previousValue) {
+//         previousValue.classList.remove('underline');
+//     };
+//     el.classList.add('underline');
+//     previousValue = el;
 
-});
+// });
 function delStudent(student) {
     let row = student.parentNode.parentNode;
     document.querySelector('.table').removeChild(row);

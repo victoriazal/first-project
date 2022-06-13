@@ -21,6 +21,7 @@ header {
 
 .Top_menu a:hover {
     color: white;
+    border-bottom: 2px solid salmon;
 }
 
 .Top_menu a {
@@ -37,10 +38,6 @@ header {
     margin: 0px 0px 20px 0px;
     cursor: pointer;
     background-color: rgb(231, 231, 0);
-}
-
-.underline {
-    border-bottom: 2px solid salmon;
 }
 
 .logOut {

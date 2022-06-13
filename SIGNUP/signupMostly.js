@@ -48,7 +48,7 @@ forms.addEventListener('submit', function (event) {
         event.preventDefault();
         clientsDatabase.push(client)
         localStorage.setItem('client', JSON.stringify(clientsDatabase))
-        window.location.href = './index.html';
+        window.location.href = "../LOGIN/index.html";
 
     } else {
         alert('Passwords do not look similar to me, try again darling');

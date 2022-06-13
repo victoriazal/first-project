@@ -5,18 +5,12 @@ const confirmPassword = forms.confirmPassword;
 const agreement = forms.check;
 const signUp = forms.signUp
 
-const SignUpClients = localStorage.getItem('client');
-const ObjSignUpClients = JSON.parse(SignUpClients);
-console.log(SignUpClients);
-console.log(typeof JSON.parse(SignUpClients));
-
-for (key in ObjSignUpClients) {
-    console.log(ObjSignUpClients[key].email)
-    console.log(ObjSignUpClients[key].password)
+const SignUpClients = JSON.parse(localStorage.getItem('client'));
+for (key in SignUpClients) {
     forms.addEventListener('submit', function (event) {
         event.preventDefault();
-        if (email.value === ObjSignUpClients[key].email && password.value === ObjSignUpClients[key].password) {
-            window.location.href = './menu.html';
+        if (email.value === SignUpClients[key].email && password.value === SignUpClients[key].password) {
+            window.location.href = "../MENU/menu.html";
         }
         else {
             alert('user not found please Sign Up')
